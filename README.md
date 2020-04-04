@@ -18,3 +18,11 @@ dplyr package is based on plyr package, developed by [Hadley Wickham](http://had
 - 1.9: Arrange
 - 1.10: Do
 - 1.11: dplyr with Database
+
+### Section 2: Applying purrr for List and Vector
+
+
+### Section 3: Applying Tidyverse for Data Organization
+
+
+### Section 4: Applying lattice and ggplot2 for Visualization
