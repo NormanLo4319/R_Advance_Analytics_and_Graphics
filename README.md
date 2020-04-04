@@ -1,4 +1,4 @@
-# R_Advance_Analytics_and_Graphics
+# Advance Analytics and Visualization in R
 ## Objectives:
 1. Discuss some of the R packages that improve the efficiency for data analytic
 2. Cover the intiutive data analytic tools for analyzing different data sets
