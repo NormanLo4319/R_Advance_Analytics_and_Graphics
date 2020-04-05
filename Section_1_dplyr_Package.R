@@ -1,8 +1,8 @@
 ################################
-###### dplyr Package Demo ######
+######    dplyr Package   ######
 ################################
 
-### 1.1 - Data Frame ###
+### 1.1 - tbl Object and data.frame ###
 
 # Note: if you want to use both dplyr and plyr, the plyr package should be imported first, 
 # then import the dplyr package.  The reason is some of the object names are the same in the
