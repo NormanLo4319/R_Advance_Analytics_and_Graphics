@@ -2,7 +2,7 @@
 ## Objectives:
 1. Discuss some of the R packages that improve the efficiency for data analytic
 2. Cover the intiutive data analytic tools for analyzing different data sets
-3. Apply different visualization tools to represent the data
+3. Apply different visualization tools to demonstrate the data
 
 ## Index:
 ### Section 1: Applying dplyr Package to Increase Efficiency
@@ -20,13 +20,20 @@
 - 1.11: dplyr with Database
 
 ### Section 2: Applying purrr for List and Vector
-R has many packages to process a list or vector of elements.  Among all these packages, [purrr](https://purrr.tidyverse.org/index.html), developed by Hadley Wickham, is one of the most standardized and efficient package to handle lists or vectors computation by replacing many for loop with code that is both more succint and easier to read.  The name "purrr" emphasizes the idea of "pure" functional programming design rooted in base R.  
+R has many packages to process a list or vector of elements.  Among all these packages, [purrr](https://purrr.tidyverse.org/index.html), developed by Hadley Wickham, is one of the most standardized and efficient package to handle lists or vectors computation by replacing many for loop with code that is both more succint and easier to read.  The name "purrr" emphasizes the idea of "pure" functional programming design philosophy rooted in base R.  
 - 2.1: Map
 - 2.2: Return Data Type from Map
 - 2.3: Map a Data Frame
 - 2.4: Map over Multiple Inputs
 
-### Section 3: Applying Tidyverse for Data Organization
-
+### Section 3: Applying tidyverse for Data Manipulation
+The tidyverse is an opinionated collection of R packages designed for data science. As discussed in the previous 2 sections, dplyr and purrr are the two most popular packages in tidyverse for data analytics.  In this section, we combine the use of dplyr and tidyr packages for data cleaning and manipulation.  Even though the main stream for this process is still done with plyr, reshape2, and data.table packages, dplyr and [tidyr](https://tidyr.tidyverse.org/) has been gaining its popularity in the data science industry.
+- 3.1: Combine Rows and Columns
+- 3.2: Join
+- 3.3: Change Data Format
 
 ### Section 4: Applying lattice and ggplot2 for Visualization
+In my opinion, visualization is the most important part in data analytics.  Without the intuitive visualization, a research, project, or report will not be able to deliver to the audiences effectively. Base R has some very nice and user-friendly graphical tools. Here, we introduce [lattice](https://www.statmethods.net/advgraphs/trellis.html) and [ggplot2](https://ggplot2.tidyverse.org/) packages to demonstrate the use of visualization in explanatory data analysis in R.  
+- 4.1: Base R Graphic Tools
+- 4.2: ggplot2 Package
+- 4.3: lattice Package
