@@ -20,7 +20,11 @@ dplyr package is based on plyr package, developed by [Hadley Wickham](http://had
 - 1.11: dplyr with Database
 
 ### Section 2: Applying purrr for List and Vector
-
+R has many packages to process a list or vector of elements.  Among all these packages, purrr, developed by Hadley Wickham, is one of the most standardized and efficient package to handle list or vector computation.  The name "purrr" emphasizes the idea of "pure" functional programming design rooted from R.  
+- 2.1: Map
+- 2.2: Return Data Type from Map
+- 2.3: Map a Data Frame
+- 2.4: Map over Multiple Inputs
 
 ### Section 3: Applying Tidyverse for Data Organization
 
