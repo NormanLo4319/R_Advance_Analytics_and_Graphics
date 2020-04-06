@@ -30,7 +30,7 @@ R has many packages to process a list or vector of elements.  Among all these pa
 The tidyverse is an opinionated collection of R packages designed for data science. As discussed in the previous 2 sections, dplyr and purrr are the two most popular packages in tidyverse for data analytics.  In this section, we combine the use of dplyr and tidyr packages for data cleaning and manipulation.  Even though the main stream for this process is still done with plyr, reshape2, and data.table packages, dplyr and [tidyr](https://tidyr.tidyverse.org/) has been gaining its popularity in the data science industry.
 - 3.1: Combine Rows and Columns
 - 3.2: Join
-- 3.3: Change Data Format
+- 3.3: Transform Data Format
 
 ### Section 4: Applying lattice and ggplot2 for Visualization
 In my opinion, visualization is the most important part in data analytics.  Without the intuitive visualization, a research, project, or report will not be able to deliver to the audiences effectively. Base R has some very nice and user-friendly graphical tools. Here, we introduce [lattice](https://www.statmethods.net/advgraphs/trellis.html) and [ggplot2](https://ggplot2.tidyverse.org/) packages to demonstrate the use of visualization in explanatory data analysis in R.  
