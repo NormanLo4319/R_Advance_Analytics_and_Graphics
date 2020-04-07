@@ -6,7 +6,7 @@
 
 ## Index:
 ### Section 1: Applying dplyr Package to Increase Efficiency
-[dplyr](https://dplyr.tidyverse.org/) package is based on plyr package, developed by [Hadley Wickham](http://hadley.nz/). The package starts with "d" to emphasize the use on "data.frame".  For "list" and "vector", it will be handled by a separated package "purrr", which will be covered in section 2. It worth to note that the dplyr package has significantly improved the efficiency and computational speed for R users.  It also offers a better readability coding logic for average R users, especially people who are already fimilar with database query language.
+[dplyr](https://dplyr.tidyverse.org/) package is rooted from the plyr package, developed by [Hadley Wickham](http://hadley.nz/). The package starts with "d" to emphasize the use on "data.frame".  For "list" and "vector", it will be handled by a separated package "purrr", which will be covered in section 2. It is worth to note that the dplyr package has significantly improved the efficiency and computational speed for R users.  It also offers a better readability coding logic for the average R users, especially people who are already fimilar with database query language.
 - 1.1: tbl Object & data.frame
 - 1.2: Select
 - 1.3: Partial Match
@@ -27,7 +27,7 @@ R has many packages to process a list or vector of elements.  Among all these pa
 - 2.4: Map over Multiple Inputs
 
 ### Section 3: Applying tidyverse for Data Manipulation
-The tidyverse is an opinionated collection of R packages designed for data science. As discussed in the previous 2 sections, dplyr and purrr are the two most popular packages in tidyverse for data analytics.  In this section, we combine the use of dplyr and tidyr packages for data cleaning and manipulation.  Even though the main stream for this process is still done with plyr, reshape2, and data.table packages, dplyr and [tidyr](https://tidyr.tidyverse.org/) has been gaining its popularity in the data science industry.
+The tidyverse is an opinionated collection of R packages designed for data science. As discussed in the previous 2 sections, dplyr and purrr are the two most popular packages in tidyverse for data analytics.  In this section, we combine the use of dplyr and tidyr packages for data cleaning and manipulation.  Even though the main stream for this process is processed with plyr, reshape2, and data.table packages, dplyr and [tidyr](https://tidyr.tidyverse.org/) has been gaining its popularity in the data science industry.
 - 3.1: Combine Rows and Columns
 - 3.2: Join
 - 3.3: Transform Data Format
