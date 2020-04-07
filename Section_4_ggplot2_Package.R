@@ -50,7 +50,7 @@ boxplot(diamonds$carat)
 # Think of "+" is like adding an additional layer to the plot for different feature added. 
 # The most important thing to add into the new layer is aes(), represents "aesthetic" adjustment.
 
-# Histogram in ggplot2
+# Histogram with ggplot2
 # e.g. Using ggplot2 for plotting the histogram for numerical data 'Carat' in the diamonds data set.
 ggplot(data=diamonds) + geom_histogram(aes(x=carat))
 
@@ -60,7 +60,8 @@ ggplot(data=diamonds) + geom_density(aes(x=carat), fill='grey50')
 # Note: Histogram divide the continuous variable into groups (x-axis) and gives the frequency (y-axis) in each group.
 # Density distribution is evaluated at any given point on the continuous variable (x-axis)
 
-# Scatter Plot in ggplot2
+
+# Scatter Plot with ggplot2
 # In this section, we are not only demonstrate how to use scatter plot with ggplot2 package, we also try to demonstrate
 # the simplicity for adding some useful features to our graph.
 # e.g. Plot the diamond price and carat within a scatter plot
@@ -89,7 +90,7 @@ g + geom_point(aes(color=color)) + facet_grid(cut~clarity)
 ggplot(diamonds, aes(x=carat)) + geom_histogram() + facet_wrap(~color)
 
 
-# Box Plot in ggplot2
+# Box Plot with ggplot2
 # ggplot2 provides a more complete and intuitive features to the box plot graphic
 # e.g. Plotting the box plot for carat
 ggplot(diamonds, aes(y=carat, x=1)) + geom_boxplot()
@@ -105,7 +106,7 @@ ggplot(diamonds, aes(y=carat, x=cut)) + geom_boxplot()
 ggplot(diamonds, aes(y=carat, x=cut)) + geom_violin()
 
 
-# Line Graph in ggplot2
+# Line Graph with ggplot2
 # Line graph is usually applied to express the time series data.
 # We are using the economics data set from ggplot2 package to demonstrate the use of line graph with date.
 # e.g. Plot the population data with the given date.
@@ -119,29 +120,21 @@ library(lubridate)
 economics$year <- year(economics$date)
 # The argument label=TRUE means to return month by its name, not a numeric value
 economics$month <- month(economics$date, label=TRUE)
-
 # Let's save the data in or beyond 2000 to an object "econ2000"
 econ2000 <- economics[which(economics$year >= 2000),]
-
 # We can use scales package to give better format to the graph
 library(scales)
-
 # Build the base of the line graph
 g <- ggplot(econ2000, aes(x=month, y=pop))
-
 # Define different colors for different years.
 # Use argument group to group the data into different year.
 g <- g +geom_line(aes(color=factor(year), group=year))
-
 # Define the color by the given "Year"
 g <- g + scale_color_discrete(name="Year")
-
 # Format the y-axis
 g <- g + scale_y_continuous(labels=comma)
-
 # Adding the title, x-axis, and y-axis to the graph
 g <- g + labs(title="Population Growth", x="Month", y="Population")
-
 # Plot the graph with all the added features
 g
 
@@ -161,3 +154,51 @@ g2 + theme_economist() + scale_color_economist()
 g2 + theme_excel() + scale_color_excel()
 g2 + theme_tufte()
 g2 + theme_wsj()
+
+
+### 4.3 - lattice Package ###
+
+# The lattice package, written by Deepayan Sarkar, attempts to improve on base R graphics
+# by providing better defaults and the ability to easily display multivariate relationships.
+library(lattice)
+
+# Histogram with lattice
+# e.g. histogram for carat in the diamonds data set
+histogram(~ diamonds$carat,
+          type="count",
+          main="Histogram",
+          xlab="Carat")
+
+# Note: The default argument for type is "percent", which return the percentage of the total count.
+
+
+# Scatter Plot with lattice
+# e.g. scatter plot for diamond price and carat grade
+xyplot(price~carat,
+       data=diamonds,
+       main="Scatterplots by Price and Carat",
+       xlab="Carat",
+       ylab="Price")
+
+
+# Box Plot with lattice
+bwplot(diamonds$carat,
+       main="Boxplot for Carat",
+       ylab="Carat")
+
+# Note: lattice package displays a boxplot with one demensional data horizontally by default
+
+# Suppose we are interested to the boxplot for carat in different cut grade
+bwplot(carat~cut,
+       data=diamonds,
+       main="Boxplot for Carat by Cut",
+       xlab="Cut",
+       ylab='Carat')
+
+# We can also generate the violin plot like in ggplot2 package by the argument panel=panel.violin.
+bwplot(carat~cut,
+       data=diamonds,
+       main="Boxplot for Carat by Cut",
+       xlab="Cut",
+       ylab='Carat',
+       panel=panel.violin)
