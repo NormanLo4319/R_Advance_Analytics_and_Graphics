@@ -6,7 +6,7 @@
 
 ## Index:
 ### Section 1: Applying dplyr Package to Increase Efficiency
-[dplyr](https://dplyr.tidyverse.org/) package is rooted from the plyr package, developed by [Hadley Wickham](http://hadley.nz/). The package starts with "d" to emphasize the use on "data.frame".  For "list" and "vector", it will be handled by a separated package "purrr", which will be covered in section 2. It is worth to note that the dplyr package has significantly improved the efficiency and computational speed for R users.  It also offers a better readability coding logic for the average R users, especially people who are already fimilar with database query language.
+[dplyr](https://dplyr.tidyverse.org/) package is rooted from the plyr package, developed by [Hadley Wickham](http://hadley.nz/). The package starts with "d" to emphasize the use on "data.frame".  For "list" and "vector", which is handled by a separated package "purrr" and will be covered in section 2. It is worth to note that the dplyr package has significantly improved the efficiency and computational power for R users.  It also offers a better readability coding logic for the average R users, especially people who are already fimilar with database query language.
 - 1.1: tbl Object & data.frame
 - 1.2: Select
 - 1.3: Partial Match
@@ -20,7 +20,7 @@
 - 1.11: dplyr with Database
 
 ### Section 2: Applying purrr for List and Vector
-R has many packages to process a list or vector of elements.  Among all these packages, [purrr](https://purrr.tidyverse.org/index.html), developed by Hadley Wickham, is one of the most standardized and efficient package to handle lists or vectors computation by replacing many for loop with code that is both more succint and easier to read.  The name "purrr" emphasizes the idea of "pure" functional programming design philosophy rooted in base R.  
+R has many packages to process list or vector of elements.  Among all these packages, [purrr](https://purrr.tidyverse.org/index.html), developed by Hadley Wickham, is one of the most popular and efficient package to handle list or vector computation by replacing many for loop with code that is both more succint and easier to read.  The name "purrr" emphasizes the idea of "pure" functional programming design philosophy rooted in base R.  
 - 2.1: Map
 - 2.2: Return Data Type from Map
 - 2.3: Map a Data Frame
