@@ -33,7 +33,7 @@ The tidyverse is an opinionated collection of R packages designed for data scien
 - 3.3: Transform Data Format
 
 ### Section 4: Applying lattice and ggplot2 for Visualization
-In my opinion, visualization is the most important part in data analytics.  Without the intuitive visualization, a research, project, or report will not be able to deliver to the audiences effectively. Base R has some very nice and user-friendly graphical tools. Here, we introduce [lattice](https://www.statmethods.net/advgraphs/trellis.html) and [ggplot2](https://ggplot2.tidyverse.org/) packages to demonstrate the use of visualization in explanatory data analysis in R.  
+In my opinion, visualization is the most important part in data analytics.  Without the intuitive visualization, a research, project, or report cannot be delivered to the audiences effectively. Base R has some very nice and user-friendly graphical tools. Here, we introduce [lattice](https://www.statmethods.net/advgraphs/trellis.html) and [ggplot2](https://ggplot2.tidyverse.org/) packages to demonstrate the use of visualization in explanatory data analysis in R.  
 - 4.1: Base R Graphic Tools
 - 4.2: ggplot2 Package
 - 4.3: lattice Package
