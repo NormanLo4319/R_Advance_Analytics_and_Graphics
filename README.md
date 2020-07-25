@@ -37,3 +37,5 @@ In my opinion, visualization is the most important part in data analytics.  With
 - 4.1: Base R Graphic Tools
 - 4.2: ggplot2 Package
 - 4.3: lattice Package
+
+Copyright © 2020 Norman Lo
